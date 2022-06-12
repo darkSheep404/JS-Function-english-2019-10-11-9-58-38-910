@@ -5,6 +5,7 @@
 ```
 function countWords(message){
   // wirte your code here
+  return message.trim().split(' ').length
 }
 countWords('Good morning, I love JavaScript.'); // should return 5
 ```

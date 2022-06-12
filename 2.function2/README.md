@@ -5,7 +5,15 @@
 ```
 function palindrome(message){
   // wirte your code here
+  var arr=message.split('');
+  var len=arr.length
+  for(let i=0;i<Math.floor(len/2);i++)
+  {
+    if(arr[i]!==arr[len-1-i])
+      return false;
+  }
+  return true;
 }
-palindrome('hello'); // should return false
-palindrome('abcba'); // should return true
+console.log(palindrome('hello')); // should return false
+console.log(palindrome('abcba')); // should return true
 ```
